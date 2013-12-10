@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABB59896-8220-4ACA-B6B9-F4B9B66BCCBC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OrganizingData</RootNamespace>
+    <AssemblyName>OrganizingData</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangeBidirectionalAssociationToUnidirectional\Customer.cs" />
+    <Compile Include="ChangeBidirectionalAssociationToUnidirectional\Order.cs" />
+    <Compile Include="ChangeReferenceToValue\Currency.cs" />
+    <Compile Include="ChangeUnidirectionalAssociationToBidirectional\Customer.cs" />
+    <Compile Include="ChangeUnidirectionalAssociationToBidirectional\Order.cs" />
+    <Compile Include="ChangeValueToReference\Customer.cs" />
+    <Compile Include="ChangeValueToReference\Order.cs" />
+    <Compile Include="EncapsulateCollection\Course.cs" />
+    <Compile Include="EncapsulateCollection\EncapsulateArrays\SkillManager.cs" />
+    <Compile Include="EncapsulateCollection\Person.cs" />
+    <Compile Include="EncapsulateField\EncapsulateField.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplaceArrayWithObject\ReplaceArrayWithObject.cs" />
+    <Compile Include="ReplaceDataValueWithObject\Order.cs" />
+    <Compile Include="ReplaceMagicNumberWithSymbolicConstant\EnergyCalculator.cs" />
+    <Compile Include="ReplaceSubclassWithFields\FeMale.cs" />
+    <Compile Include="ReplaceSubclassWithFields\Male.cs" />
+    <Compile Include="ReplaceSubclassWithFields\Person.cs" />
+    <Compile Include="ReplaceTypeCodeWithClass\Person.cs" />
+    <Compile Include="ReplaceTypeCodeWithClass\ReplaceTypeCodeWithClass.cs" />
+    <Compile Include="ReplaceTypeCodeWithStateOrStrategy\Employee.cs" />
+    <Compile Include="ReplaceTypeCodeWithSubclasses\Employee.cs" />
+    <Compile Include="SelfEncapsulateField\IntRange.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
