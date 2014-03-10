@@ -16,7 +16,7 @@ namespace OrganizingDataFacts
             var foodForKent = new Order(kent, "Food");
             var musicForKent = new Order(kent, "Music");
             var foodForMartin = new Order(martin, "Food");
-
+            
             kent.AddOrder(foodForKent);
             kent.AddOrder(musicForKent);
             martin.AddOrder(foodForMartin);
