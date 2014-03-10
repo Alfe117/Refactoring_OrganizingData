@@ -10,6 +10,7 @@ namespace OrganizingData.ChangeBidirectionalAssociationToUnidirectional
         public Customer(string name)
         {
             this.name = name;
+            CustomerRepository.AddCustomer(this);
         }
 
         public string GetName()

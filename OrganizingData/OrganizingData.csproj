@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChangeBidirectionalAssociationToUnidirectional\Customer.cs" />
+    <Compile Include="ChangeBidirectionalAssociationToUnidirectional\CustomerRepository.cs" />
     <Compile Include="ChangeBidirectionalAssociationToUnidirectional\Order.cs" />
     <Compile Include="ChangeReferenceToValue\Currency.cs" />
     <Compile Include="ChangeUnidirectionalAssociationToBidirectional\Customer.cs" />

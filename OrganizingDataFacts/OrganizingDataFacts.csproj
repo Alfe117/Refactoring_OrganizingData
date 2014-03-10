@@ -46,6 +46,7 @@
     <Compile Include="ChangeReferenceToValueFact.cs" />
     <Compile Include="ChangeUnidirectionalAssociationToBidirectionalFact.cs" />
     <Compile Include="ChangeValueToReferenceFact.cs" />
+    <Compile Include="ChangeBidirectionalAssociationToUnidirectionalFact.cs" />
     <Compile Include="EncapsulateCollectionFact.cs" />
     <Compile Include="EncapsulateFieldFact.cs" />
     <Compile Include="ReplaceArrayWithObjectFact.cs" />
