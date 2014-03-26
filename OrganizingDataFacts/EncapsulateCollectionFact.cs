@@ -18,7 +18,7 @@ namespace OrganizingDataFacts
             kent.Courses = courses;
             kent.Courses.Add(new Course("Refactoring", true));
 
-            var advantagedCount = kent.Courses.Where(c => c.IsAdvantaged).Count();
+            var advantagedCount = kent.Courses.Count(c => c.IsAdvantaged);
 
             Assert.Equal(2, advantagedCount);
         }
@@ -28,11 +28,11 @@ namespace OrganizingDataFacts
         {
             var skillManager = new SkillManager();
             skillManager.Skills = new string[2];
-            skillManager.Skills[0] = "Kent";
-            skillManager.Skills[1] = "Martin";
+            skillManager.Skills[0] = "Refactoring";
+            skillManager.Skills[1] = "TDD";
 
-            Assert.Equal("Kent", skillManager.Skills[0]);
-            Assert.Equal("Martin", skillManager.Skills[1]);
+            Assert.Equal("Refactoring", skillManager.Skills[0]);
+            Assert.Equal("TDD", skillManager.Skills[1]);
         }
     }
 }
